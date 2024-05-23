@@ -4,6 +4,7 @@ import { useRequireAuth } from './auth';
 import Dashboard from './Pages/Dashboard';
 import Login from './Form/Login';
 import AdminForm from './Form/AdminForm';
+import Registration from './Form/Registration';
 // import Login from './Pages/Login'; 
 
 const PrivateRoute = ({ element, ...props }) => {
@@ -21,6 +22,8 @@ const MainRouter = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Registration />} />
+
         <Route path="/admin" element={<AdminForm />} />
 
         <Route path='/dashboard' element={<PrivateRoute element={<Dashboard />} />} />

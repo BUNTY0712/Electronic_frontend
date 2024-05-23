@@ -1,21 +1,35 @@
 import React from 'react';
+import { Box, Grid, CircularProgress } from '@mui/material'
+import Eletronic from '../Assets/Image/Electronics.png'
 
 const Dashboard = () => {
   return (
+
+    <>
+  <Grid container>
+<Grid item lg={12}>
+  <Box style={{display: "flex", justifyContent: "space-between", padding: "20px 30px", alignItems: "center"}}>
+<Box> <img src={Eletronic} alt="" /></Box>
+
+
+<Box style={{display: "flex"}}><Box>
+  <input type="text" />
+  </Box></Box>
+
+
+<Box>User</Box>
+  </Box>
+
+
+</Grid>
+  </Grid>
+    <Box></Box>
+    
     <div onClick={() => sessionStorage.clear()}>Dashboard</div>
+    </>
 
 
-    // <div style={{ marginTop: '50px' }}>
-    //     <h2>Inserted Products</h2>
-    //     <ul>
-    //       {products.map((product, index) => (
-    //         <li key={index}>
-    //           <img src={`http://localhost:8080/${product.image}`} alt={product.productName} style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '10px' }} />
-    //           <span>{product.productName}</span>
-    //         </li>
-    //       ))}
-    //     </ul>
-    //   </div>
+  
   );
 };
 

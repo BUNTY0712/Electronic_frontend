@@ -109,7 +109,7 @@ const Login = () => {
                                         onChange={handlePasswordChange}
                                     />
                                 </Box>
-                                <Box mt={2} style={{ textAlign: "right", color: "#009D48", fontWeight: "600" }}>Register ? </Box>
+                                <Box onClick={() => navigate('/register')} mt={2} style={{ textAlign: "right", color: "#009D48", fontWeight: "600", cursor: 'pointer' }}>Register ? </Box>
                                 <Box onClick={LoginResult} mt={3} style={{ textAlign: "center", backgroundColor: "#62D195", color: "white", border: "1px solid #009D48", fontWeight: "600", cursor: "pointer" }} className="form-control">
                                     Login
                                 </Box>
